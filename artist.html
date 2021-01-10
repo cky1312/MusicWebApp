@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Music</title>
+    <script>
+        $(document).ready(function() {
+            $("#myModal").on('hide.bs.modal', function() {
+                $("#cartoonVideo").attr('src', '');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html">
+                    <div class="navbar-brand" style="color: white;">CMUSIC</div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li class="active"><a href="artist.html">Artists</a></li>
+                    <li><a href="Portfolio/index.html">About</a></li>
+                </ul>
+                <form action="" class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="artist">
+        <h1 class="text-center">YOUR FAVOURITE ARTISTS</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="#myModal2" data-toggle="modal">
+                            <img src="Images/Sonu Nigam.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Sonu Nigam</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="#myModal1" data-toggle="modal">
+                            <img src="Images/Udit NArayan.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Udit Narayan</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="#myModal" data-toggle="modal">
+                            <img src="Images/Kumar Sanu.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Kumar Sanu</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="#myModal1" data-toggle="modal">
+                            <img src="Images/Allka Yagnika.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Alka Yagnik</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="">
+                            <img src="Images/Lata Mangeshkar.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Lata Mangeshkar</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="#myModal3" data-toggle="modal">
+                            <img src="Images/Shreya Ghosal.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Shreya Ghosal</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="">
+                            <img src="Images/Baadshah.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Baadshah</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <a href="">
+                            <img src="Images/Honey Singh.jpg" alt="" style="width: 100%; height: 225px;">
+                            <div class="caption text-center">
+                                <p>Honey Singh</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YouTube Video</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/8_vjmiSzERI" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YouTube Video</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/cJagX6bB3ZQ" allowfullscreen allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YouTube Video</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/V-R5lSjfMpA" allowfullscreen allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YouTube Video</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/oWelHUyeIFM" allowfullscreen allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
